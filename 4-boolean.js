@@ -2,12 +2,35 @@
  * They are just true or false statements
  */
 
-// True false table:
-// console.log(true && true)
-// console.log(true && false)
-// console.log(true || false)
-// console.log(false || false)
-// console.log(false && false)
+// And statement : &&
+// Or Statement ||
+// Option + Shift + L for AZERTY
+// Not operator !
+
+/**
+ * True False Table
+ *
+ * AND (&&)
+ * true && true => true
+ * true && false => false
+ * false && true => false
+ * false && false => false
+ *
+ * OR (||)
+ * true || true => true
+ * true || false => true
+ * false || true => true
+ * false || false => false
+ */
+
+/**
+ * The NOT operator (!)
+ * It just reverse a boolean statement
+ * NOT true : !true  => false
+ * NOT false : !false => true
+ * NOT string : !"Hello there" => false
+ * NOT empty string : !"" => true
+ */
 
 /**
  * And: &&
@@ -18,7 +41,12 @@
  * LesserOrEqual: <=
  * Loose Equality: ==
  * Strict Equality: ===
+ * Loose not equal: !=
+ * Strict not equal !==
  */
+
+"2" == 2 // true
+"2" === 2 // false
 
 // Truthyness
 console.log("Truthyness")

@@ -1,10 +1,9 @@
 // Simple if condition
-const itIsRaining = false
-const itIsWednesday = true
 
-if (itIsWednesday) {
-	console.log("It is half of the week !")
-}
+const todayIsWednesday = true
+const itIsRaining = false
+const isItTimeToEat = false
+const randomInteger = Math.floor(Math.random() * 10)
 
 /**
  * if (condition) {
@@ -12,56 +11,84 @@ if (itIsWednesday) {
  * }
  */
 
+if (todayIsWednesday) {
+	console.log("It is wednesday!")
+}
+
 // if-else block
-if (itIsRaining) {
-	console.log("The rain is upon us!")
+
+if (!todayIsWednesday) {
+	console.log("It Is not wednesday")
 } else {
-	console.log("It is not raining...")
+	console.log("It is wednesday!")
+}
+
+if (todayIsWednesday) {
+	console.log("It is wednesday!")
+}
+if (itIsRaining) {
+	console.log("It is raining")
+}
+if (randomInteger > 5) {
+	console.log(`Random integer ${randomInteger} is greater than 5`)
+} else {
+	console.log("Less than 5")
 }
 
 /**
  * Revering conditions with a bang !
  */
-if (!itIsRaining) {
-	console.log("It is not raining...")
-}
-console.log("The rain is upon us!")
 
 // if, else if ..., else block
-if (itIsRaining) {
-	console.log("Rain")
-} else if (itIsWednesday) {
-	console.log("Wednesday")
+
+if (todayIsWednesday) {
+	console.log("It is wednesday!")
+} else if (itIsRaining) {
+	console.log("It is raining")
+} else if (randomInteger > 5) {
+	console.log(`Random integer ${randomInteger} is greater than 5`)
 } else {
-	console.log("Neither")
+	console.log("Less than 5")
 }
 
-// switch
-const dayOfTheWeek = "Wednesday"
+// multiple if statements
 
-switch (dayOfTheWeek) {
-	case "Monday":
-		console.log("Did you had a good weekend?")
-		break
-	case "Tuesday":
-		console.log("Tuesday day")
-		break
-	case "Wednesday":
-		console.log("It is the middle of the week")
+// switch
+
+let number = 3
+
+switch (number) {
+	case 5:
+		console.log(5)
+	case 4:
+		console.log(4)
+	case 3:
+		console.log(3)
+	case 2:
+		console.log(2)
+	case 1:
+		console.log(1)
+	case 0:
+		console.log("Liftoff !")
 		break
 	default:
-		console.log("Half the week is gone already")
+		console.log("wrong input")
+		break
 }
 
 // Ternary operator
 
-const biggerThanDotFive = Math.random() > 0.5 ? "Yup" : "Nay"
-console.log(biggerThanDotFive)
-// condition ? true : false
+// typeof 'string'
+// 5 < 3
 
 let result
-if (Math.random() > 0.5) {
-	result = "Yup"
+
+if (randomInteger > 5) {
+	result = "Big number"
 } else {
-	result = "Nay"
+	result = "Small number"
 }
+
+console.log(result)
+
+let ternaryResult = randomInteger > 5 ? "Big Number" : "Small number"

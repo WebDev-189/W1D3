@@ -1,2 +1,7 @@
-// Executing a file:
-// in your terminal: node path-to/your-file.js
+/**
+ * ! Executing a file:
+ *
+ * * node path/toward-your/file.js
+ */
+
+console.log("Executed in the terminal ! 😀")

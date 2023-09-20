@@ -9,60 +9,59 @@
  * backticks: ``
  */
 
-let teachingStaff = "Florian, Daniel, I'll break"
-let programmingHaiku = `I do Programming,
-Programing is what I do
-The sun is shining
-`
-// `
-// <div>
-//   <span>${teachingStaff}</span>
-// </div>
-// `
+let className = "WebDev-189"
+let classSize = 10
+// className is composed of classSize people
+const sentence = className + " is composed of " + classSize + " people"
+const sentenceWithBackticks = `${className} is composed of ${classSize} people`
 
 //  Concatenation
 
-let firstName = "Rudy"
-console.log("Hello " + firstName + "!")
-console.log(`Hello ${firstName}!`)
-
 // Advantages of backticks
+
+const haikku = `
+Programming is What I do,
+It is fun,
+And the sun is shining.
+`
+// `
+// <div>
+//   <h2>${articleTitle}</h2>
+//   <p>${articleText}</p>
+// </div>
+// `
 
 //  Template literal
 
 // Multi-line
 
 // index in Strings
-console.log(firstName[firstName.length - 1])
-console.log(firstName.at(-1))
-console.log(firstName.includes("ude"))
+
+const myName = "floroano"
+console.log(myName[0])
+console.log(myName.length)
 
 /**
  * Some available methods
  * length, upper / lower case, includes, replace, replaceAll ...
  */
-console.log(programmingHaiku.length)
-console.log(programmingHaiku.toUpperCase())
-console.log(programmingHaiku.toLowerCase().includes("pro"))
-console.log("RegExp attempt: ", programmingHaiku.match(/pro/i))
-console.log("a" < "A")
-//           97   65
+
+console.log(myName.toUpperCase())
+console.log(haikku.includes(" is "))
+console.log(haikku.includes("z"))
+console.log(myName.replaceAll("o", "*"))
 
 // Immutability
 
-const modifiedName =
-	firstName.slice(0, 3) + firstName[firstName.length - 1].toUpperCase()
-
-console.log(modifiedName)
-
+myName[0] = "H"
+console.log(myName)
+const capitalized = myName[0].toUpperCase() + myName.slice(1)
+console.log(capitalized)
 // Comparing strings
 
-console.log("abc" < "CDE")
+console.log("Abc" < "abc")
 
-console.log("String comparisons: ", "2" === 2)
+const firstWord = "RÉSERVÉ"
+const secondWord = "reserve"
 
-// function sum(a:number, b:number) {
-// 	return a + b
-// }
-
-// sum(3, 5)
+console.log(firstWord.localeCompare(secondWord, "en", { sensitivity: "base" }))
